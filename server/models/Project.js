@@ -21,10 +21,10 @@ const projectSchema = new mongoose.Schema({
     ref: "User",
   },
 
-  leader: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
-  },
+  // leader: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref: "User",
+  // },
 
   status: {
     type: String,
@@ -34,6 +34,7 @@ const projectSchema = new mongoose.Schema({
 
   deadline: {
     type: Date,
+    required:true
   },
 }, { timestamps: true });
 
